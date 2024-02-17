@@ -1,0 +1,113 @@
+.form_container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  margin: 0 auto;
+}
+.form_container form input {
+  width: 17rem;
+  height: 2.1rem;
+  background-color: #414040;
+  border: none;
+  padding-left: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: white;
+}
+.form_container form input:active,
+.form_container form input:focus {
+  border: none;
+  outline: none;
+}
+.btn {
+  height: 2rem;
+  padding: 0 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.container {
+  color: #fff;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.section_center {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  padding: 2rem 3rem;
+  background: #7f27ff;
+  border-radius: 20px;
+}
+.box p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box p span {
+  margin-left: 5px;
+  color: white;
+  font-weight: 400;
+  font-family: cursive;
+}
+.attendence {
+  margin-top: 15px;
+  padding: 1rem 1.5rem;
+  background: #f72798;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 25px #0000005a, inset 3px 3px 25px #fffefe5a;
+}
+
+.attendence h3 {
+  color: black;
+  font-family: cursive;
+}
+.err {
+  padding: 1rem 0;
+  width: 30%;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.313);
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 15px;
+  border: 2px solid red;
+  visibility: hidden;
+  transition: 1s linear;
+}
+
+.visble {
+  transition: 1s linear;
+  visibility: visible;
+}
+.h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #4942e4;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  padding: 0%;
+}
+.form_container input::placeholder {
+  color: rgb(246, 247, 248);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

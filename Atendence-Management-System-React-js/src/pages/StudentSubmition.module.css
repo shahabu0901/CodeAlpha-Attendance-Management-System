@@ -1,0 +1,79 @@
+.form_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container > form {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #7f27ff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px #ffffff3b;
+  transform: translateY(20px);
+}
+.form_container > form > h2 {
+  font-family: cursive;
+  color: #cdfadb;
+  text-shadow: 0 0 10px #cdfadb, 0 0 50px #cdfadb;
+}
+.form_container input {
+  width: 20rem;
+  height: 2.5rem;
+  padding-left: 10px;
+  background: #414040;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.form_container input:focus,
+.form_container input:active {
+  border: none;
+  outline: none;
+}
+.form_container input::placeholder {
+  color: white;
+}
+
+.btn {
+  padding: 0.3rem 0.6rem;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  border: 2px solid #ff004d;
+  background-color: transparent;
+  color: rgb(251, 252, 252);
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.btn::before {
+  content: "";
+  width: 250%;
+  height: 250%;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s linear;
+  z-index: -1;
+}
+.btn:hover::before {
+  top: -20px;
+  left: -20px;
+}
+.add {
+  color: #ff004d;
+}
