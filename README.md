@@ -5,4 +5,4 @@ before upload this repository i was delete a node _modules Folder (if you should
 99 packages are looking for funding
   run `npm fund` for details
 
-found 0 vulnerabilities)
+found 0 vulnerabilities).
